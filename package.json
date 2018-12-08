@@ -4,8 +4,10 @@
   "description": "ssr",
   "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js --open --mode development",
+    "pack": "webpack --config webpack.config.js",
+    "babel": "babel src -d views",
+    "build": "npm run pack && npm run babel "
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,28 @@
   "bugs": {
     "url": "https://github.com/yaxonby/Server-Side-Rendering/issues"
   },
-  "homepage": "https://github.com/yaxonby/Server-Side-Rendering#readme"
+  "homepage": "https://github.com/yaxonby/Server-Side-Rendering#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.0",
+    "file-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
 }
