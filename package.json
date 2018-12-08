@@ -1,0 +1,20 @@
+{
+  "name": "ssr",
+  "version": "0.1.0",
+  "description": "ssr",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaxonby/Server-Side-Rendering.git"
+  },
+  "author": "Yura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaxonby/Server-Side-Rendering/issues"
+  },
+  "homepage": "https://github.com/yaxonby/Server-Side-Rendering#readme"
+}
